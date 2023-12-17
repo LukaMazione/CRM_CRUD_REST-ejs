@@ -1,0 +1,43 @@
+<h2 class="editUser__title">Edit <%= client.name %> (<small><%= client.id %></small>)</h2>
+
+<form method="POST" action="/client/<%= client.id %>?_method=PUT" class="editUser__form">
+    <label class="editUser__field">
+        <p class="editUser__label">
+            Email:
+        </p>
+        <p>
+            <input type="email" name="mail" class="editUser__input" value="<%= client.mail %>">
+        </p>
+    </label>
+
+    <label class="editUser__field">
+        <p class="editUser__label">
+            Imię:
+        </p>
+        <p>
+            <input type="text" name="name" class="editUser__input" value="<%= client.name %>">
+        </p>
+    </label>
+
+    <label class="editUser__field">
+        <p class="editUser__label">
+            Next contact:
+        </p>
+        <p>
+            <input type="date" name="nextContact" class="editUser__input" value="<%= client.nextContact %>">
+        </p>
+    </label>
+
+    <label class="editUser__field">
+        <p class="editUser__label">
+            Notes:
+        </p>
+        <p>
+            <textarea name="notes" class="editUser__textarea"><%= client.notes %></textarea>
+        </p>
+    </label>
+
+    <p>
+        <button type="submit" class="editUser__button">Save</button>
+    </p>
+</form>

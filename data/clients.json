@@ -1,0 +1,30 @@
+[
+	{
+		"id": "a79bc934-a616-4bc3-9a9b-4a36de99ee79",
+		"name": "Mazi",
+		"mail": "mazione@hotmail.com",
+		"nextContact": "Yesterday",
+		"notes": "Test"
+	},
+	{
+		"id": "13f25d2b-b309-4b9a-b957-a7bdc7e8c607",
+		"name": "Luka",
+		"mail": "luka.mazione@gmail.com",
+		"nextContact": "2023-10-26",
+		"notes": "Co jest kuźwa"
+	},
+	{
+		"id": "b83749c4-e1eb-4a04-9015-b4b25c52b94f",
+		"name": "Zmodyfikowany",
+		"mail": "luka.mazione@gmail.com",
+		"nextContact": "2023-10-04",
+		"notes": "ggh"
+	},
+	{
+		"id": "fa25d2d5-3ecd-4f17-85de-6fd11386a6f4",
+		"name": "Ona",
+		"mail": "mszozda23@hotmail.com",
+		"nextContact": "2023-10-22",
+		"notes": "Sprawdzanie codeStatus"
+	}
+]

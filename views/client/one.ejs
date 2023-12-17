@@ -1,0 +1,40 @@
+<div class="container">
+    <h2 class="grey-header">Klient: <%= client.name %> </h2>
+</div>
+
+<div class="container one-customer">
+    <table>
+        <tbody>
+            <tr>
+                <th class="grey-header">
+                    Email:
+                </th>
+                <td>
+                    <a href="mailto:<%= client.mail %>" target="_blank"><%= client.mail %></a>
+                </td>
+            </tr>
+            <tr>
+                <th class="grey-header">
+                    Data następnego kontaktu:
+                </th>
+                <td>
+                    <%= client.nextContact %>
+                </td>
+            </tr>
+            <% if (client.notes) { %>
+                <tr>
+                    <th class="grey-header">
+                     Notatka:
+                    </th>
+                    <td>
+                    <%= client.notes %>
+                    </td>
+                   </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    <a href="/client" class="btn btn-success btn-lg large-button">Pwrót do listy klientów</a>
+
+<a href="/client/form/edit/<%= client.id %>" class="btn btn-outline-success btn-lg large-button">Edytuj</a>
+</div>

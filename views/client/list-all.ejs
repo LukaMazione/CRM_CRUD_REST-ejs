@@ -1,0 +1,42 @@
+<h1> Baza CRM Klientów </h1>
+<table class="tListAll">
+    <caption class="tListAll__caption">
+        <h2 class="tListAll__title">Clients' list</h2>
+    </caption>
+    <thead class="tListAll__thead">
+        <tr>
+            <th class="tListAll__header">
+                E-mail
+            </th>
+            <th class="tListAll__header">
+                Imię
+            </th>
+            <th class="tListAll__header">
+                Data następnego kontaktu
+            </th>
+        </tr>
+    </thead>
+   <tbody class="tListAll__tbody">
+        <% clients.forEach(client => {  %>
+        <tr class="tListAll__row">
+            <th class="tListAll__email">
+                <a href="mailto:<%= client.mail %>" target="_blank"><%= client.mail %></a>
+            </th>
+            <td class="tListAll__name">
+                <a href="/client/<%= client.id %>" class="tListAll__link"><%= client.name %></a>
+            </td>
+            <td class="tListAll__nextContact">
+                <%= client.nextContact%>
+            </td>
+            <td class="tListAll__actions">
+                <a href="/client/<%= client.id %>" class="tListAll__link">Szczegóły</a>
+                
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+<form class="tListAll__addUserForm" method="GET" action="/client/form/add">
+    <button type="submit" class="tListAll__addUserButton">Add a user</button>
+</form>
