@@ -40,3 +40,4 @@ clientRouter
 module.exports = {
 	clientRouter,
 };
+//Proszę sprawdź mój kod pod względem logicznym i czystość kodu również
